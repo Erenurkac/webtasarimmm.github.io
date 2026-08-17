@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azra & Eren</title>
+    <style>
+        /* Ekranı tam kaplayıp içeriği tam ortaya sabitlemek için */
+        body {
+            background-color: fuchsia;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden; /* İstenmeyen kaydırma çubuklarını gizler */
+        }
+
+        /* Yazıyı içine alacak şık ve şeffaf kutu (Cam Efekti) */
+        .mesaj-kutusu {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2); /* Yarı saydam beyaz */
+            padding: 50px 80px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /* Derinlik katan gölge */
+            backdrop-filter: blur(10px); /* Arka planı bulanıklaştırır */
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            animation: float 4s ease-in-out infinite; /* Yukarı aşağı süzülme animasyonu */
+        }
+
+        /* Genel metin stili */
+        p {
+            font-size: 45px; /* Yazı boyutu büyütüldü */
+            color: white;    /* Fuşya arka planda beyaz harika durur */
+            margin: 0;
+            line-height: 1.4;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Yazının okunabilirliğini artıran gölge */
+        }
+
+        /* "Azracım" kısmını vurgulamak için */
+        strong {
+            color: #ffe600; /* Parlak, tatlı bir sarı tonu */
+            font-size: 60px; /* İsmi daha da büyük yaptık */
+            display: block;  /* İsmin tek başına üst satırda durmasını sağlar */
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(255, 230, 0, 0.7); /* İsime parlayan ışık efekti */
+        }
+
+        /* "-EREN-" imzası için özel stil */
+        .imza {
+            display: block;
+            margin-top: 25px;
+            font-size: 35px;
+            font-style: italic;
+            color: #ffcccc; /* Hafif pembemsi beyaz */
+        }
+
+        /* Süzülme Animasyonu (Sanki havada uçuyormuş gibi) */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mesaj-kutusu">
+        <p><strong>Azracım</strong> Seni Çok Seviyorum <span class="imza">-EREN-</span></p>
+    </div>
+
+</body>
+</html>
